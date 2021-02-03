@@ -7,8 +7,92 @@
   <body>
     <header>
       <nav>
-        
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
       </nav>
     </header>
+    <article class="">
+      <section>
+        <h1>HTML semántico</h1>
+        <p>
+          En HTML existen una serie de etiquetas cuyo funcionamiento se limita unicamente a lo semantico. Entre algunas <br>
+          de estas etiquetas podemos encontrar <b> &lt;header&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;nav&gt; y &lt;footer&gt;.</b> La semantica<br>
+          en HTML es un apartado muy importante, ya que ayuda a la lectura y estructura de un documento HTML. Usarlos<br>
+          es considerado buena practica de escritura y además hace mucho menos complicado el uso de  <br>
+          estilos con CSS.
+        </p>
+
+        <p>
+          A continuación, repasaremos algunas de estas <b>etiquetas de estructurado semantico</b>, descubriendo su proposito de <br>
+          uso y que poner sobre ellos.
+        </p>
+
+        <h3>Estructura de una página</h3>
+
+        <p>
+          Las páginas en HTML tienen una estructura definida que es como un estandar. Seguirla siempre es considerado una buena practica, <br>
+          además de que facilita bastante las cosas. La estructura se puede ver ilustrada en la siguiente imagen:
+        </p>
+
+        <img src="html5.png" alt="">
+
+        <h4>&lt;header&gt; - cabecera de la página</h4>
+
+        <p>
+          Dentro de esta parte de la página se suelen poner los elementos que conforman a la primera parte (o la cabeza) de la página, de <br>
+          ahí su nombre. Podemos encontrar algún titulo, un pequeño parrafo con descripción o autores, alguna imagen con diseño atractivo <br>
+          que tenga que ver con la página, el logo de la empresa o cosas así.
+        </p>
+
+        <h4>&lt;nav&gt; - barra de navegación</h4>
+
+        <p>
+          Además, es dentro de esta parte de la página en donde se suele poner la <b>barra de navegación</b>, con la etiqueta &lt;nav&gt;. A su vez dentro <br>
+          esta de barra de navegación debe ir una lista desordenada con la etiqueta &lt;ul&gt; para poner los items de la barra de navegación, los <br>
+          cuales suelen ser enlaces a otras entradas de la página.
+        </p>
+
+        <h4>&lt;article&gt; - articulo </h4>
+
+        <p>
+          Con esta etiqueta indicamos que estamos emepzando a escribir un nuevo articulo. Este articulo a su vez puede estar separado por varias <b>secciones</b>, <br>
+          por lo tanto, tenemos que agregar la respectiva etiqueta &lt;section&gt;, y una vez ahí, ya podremos empezar a escribir el articulo dentro de la sección. <br>
+          En caso tal de que haya otra sección en el mismo articulo, pues se cierra la anterior sección y se agrega otra. Todo dentro de la etiqueta article, dentro <br>
+          de ella solo se agregan section's y ya, nada más.
+        </p>
+
+        <h4>&lt;section&gt; - sección </h4>
+
+        <p>
+          Con esta etiqueta indicamos que estamos empezando un nuevo <b>articulo</b>. Podemos agregar todos los elementos correspondientes de un articulo <br>
+          como titulos, parrafos, imagenes, etc.
+        </p>
+
+        <h4>&lt;aside&gt; - barra lateral</h4>
+
+        <p>
+          Esta etiqueta indica que empezaremos a escribir un <b>aside</b>. Una barra o menu lateral es una especide de barra de navegación como <b>nav</b>, podriamos hacerla <br>
+          de la misma forma que hacemos las nav, si queremos. Normalmente lo que se coloca en la barra lateral son configuraciones, menues o una sección de articulos destacados <br>
+          o relacionados.
+        </p>
+
+        <h4>&lt;footer&gt; - pie de página</h4>
+
+        <p>
+          Con esta etiqueta indicamos que empieza el <b>footer</b> o pie de página. Dentro de esta etiqueta lo que normalmente podemos poner es información adicional de la <br>
+          página, cosas como links de contactos, links a redes sociales, links de empresas relacionadas, correos electronicos o numeros de conctactos, seccion de ayuda y <br>
+          también muy importante, encontramos declaraciones de Copyright y derechos reservados.
+        </p>
+
+      </section>
+    </article>
+    <aside class="">
+      <p>Click <a href="index.html">aquí</a> para volver.</p>
+    </aside>
+    <footer>
+      <p>Copyright - Todos los derechos reservados <br>
+      Fabián Sánchez</p
+    </footer>
   </body>
 </html>
