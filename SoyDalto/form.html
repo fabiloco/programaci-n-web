@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios en HTML</title>
+  </head>
+  <body>
+
+    <h1>Formularios en HTML</h1>
+
+    <p>
+      Los formularios en HTML son un conjunto de elementos dinamicos que sirven para interactuar con el usuario. Son <br>
+      más que todo elementos de de entrada para que el usuario digite elementos y se puedan mandar al lado del servidor. <br>
+      Elementos como <b>campos de texto</b>, <b>combobox</b>, <b>radiobuttons</b>, entre muchos otros, son los que se <br>
+      pueden utilizar.
+    </p>
+
+    <p>
+      Primero que todo, se debe usar la etiqueta &lt;form&gt; para indicar que se esta iniciando un formulario.
+    </p>
+
+    <h3>Etiqueta &lt;input&gt;</h3>
+
+    <p>Esta etiqueta sirve para capturar datos que el usuario digite en un campo de texto.</p>
+
+    <p>
+      Debemos indicarle tres atributos. El tipo de input que será, el nombre que tendrá la variable (es algo que será <br>
+      mucho más util de parte del servidor <i>"backend"</i>) y además el valor inicial que queramos asignarle al input.
+    </p>
+
+    <p>
+      Hay distintos tipos de input. Veamos algunos de ellos.
+    </p>
+
+    <form class="" action="index.html" method="post">
+
+      <h4>type=text (por defecto) </h4>
+
+      <input type="text" name="nombre" value="" required>
+
+      <h4>type=password</h4>
+
+      <input type="password" name="" value="">
+
+      <h4>type=number (spinner)</h4>
+
+      <input type="number" name="" value="">
+
+      <h4>type=email</h4>
+
+      <input type="email" name="" value="">
+
+      <h4>type=color</h4>
+
+      <input type="color" name="" value="">
+
+      <h4>type=range</h4>
+
+      <p>Se le puede agregar atributo de minimo (min) y maximo (max)</p>
+
+      <input type="range" name="" value="" min=10 max=1000>
+
+      <h4>type=date</h4>
+
+      <input type="date" name="" value="">
+
+      <h4>type=time</h4>
+
+      <input type="time" name="" value="">
+
+      <h4>type=button</h4>
+
+      <input type="button" name="" value="Botón">
+
+      <h4>type=submit</h4>
+
+      <input type="submit" name="" value="Enviar">
+
+      <h4>type=radio</h4>
+
+      <input type="radio" value="Do it!">
+
+      <h4>type=image</h4>
+
+      <input type="image" name="" value="">
+
+      <h4>type=reset</h4>
+
+      <input type="reset" name="" value="">
+
+      <h4>type=url</h4>
+
+      <input type="url" name="" value="">
+
+      <h4>type=tel</h4>
+
+      <input type="tel" name="" value="">
+
+      <h4>type=search</h4>
+
+      <input type="search" name="" value="">
+
+      <h4>type=file</h4>
+
+      <p>Para subir y mandar un archivo del computador.</p>
+
+      <input type="file" name="" value="">
+
+
+      <h2>Controles de fecha y tiempo</h2>
+
+      <h4>type=date</h4>
+
+      <input type="date" name="" value="">
+
+      <h4>type=datetime</h4>
+
+      <input type="datetime" name="" value="">
+
+      <h4>type=datetime-local</h4>
+
+      <input type="datetime-local" name="" value="">
+
+      <h4>type=month</h4>
+
+      <input type="month" name="" value="">
+
+      <h4>type=time</h4>
+
+      <input type="time" name="" value="">
+
+      <h4>type=week</h4>
+
+      <input type="week" name="" value>
+
+
+      <h2>Algunos atributos para los inputs</h2>
+
+      <p>
+        Algunos de los atributos que podemos usar en la etiqueta input, además de los que ya vimos,<br>
+        son los siguientes:
+      </p>
+
+      <ul>
+        <li><b>required:</b> este atributo indica que el elemento input debe ser llenado <br>
+          obligatoriamente.
+
+        </li>
+      </ul>
+
+
+      <h2>Algunos otros elementos etiquetas:</h2>
+
+      <h4>&lt;textarea&gt;</h4>
+
+      <p>Agrega un cuadrado de texto que se puede agrandar o achicar.</p>
+
+      <textarea name="name" rows="8" cols="80"></textarea>
+
+      <h2>atributo:readonly</h2>
+
+      <p>Sirve para que el elemento se convierta en solo lectura.</p>
+
+      <textarea name="name" rows="8" cols="80" readonly>Hola pedro soy kenia soy sebastian sebastian es cule pro joda lo amo</textarea>
+
+    </form>
+
+    <footer>
+      <p><a href="index.html">Volver a la página principal</a></p>
+    </footer>
+  </body>
+</html>

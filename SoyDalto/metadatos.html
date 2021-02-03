@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="html,aprendiendo,programacion,programación web, web">
+    <meta name="description" content="Esta es una página para documentar y apuntar mi proceso de aprendizaje con HTML, para poder recordarlo y consultarlo
+    cada vez que sea necesario, además de poder practicar al ritmo.">
+    <meta name="author" content="Fabián Sánchez">
+    <meta name="copyright" content="Fabián Sánchez">
+    <meta name="robots" content="index">
+
+    <title>Metadatos en HTML</title>
+  </head>
+  <body>
+    <h1>Metadatos en HTML</h1>
+
+    <p>
+      Los metadatos son información que sirve para describir otra información u objetos. En un <br>
+      documento HTML, los metadatos sirven para describir información del propio documento, de su <br>
+      contenido o de sus objetos.
+    </p>
+
+    <p>
+      Estos metadatos se administran con la etiqueta <b>&lt;meta&gt;</b>. Los datos que podemos <br>
+      administrar en esta etiqueta dependen del atributo que le demos.
+    </p>
+
+    <p>
+      Un metadato muy común y necesario para los hispano hablantes es el metadato <i>charset</i>. con <br>
+      este metadato podemos cambiar la codificación del texto de nuestro documento, que en defecto viene <br>
+      en ingles, lo cual no nos permite utilizar acentos y caracteres con tilde. Para solucionar esto, <br>
+      simplemente tenemos que usar la etiqueta y ponerle como atributo <i>charset=utf-8</i>, la cual es la <br>
+      codificación para que se puedan visualizar los caracteres con tilde.
+    </p>
+
+    <p>
+      <i><b>&lt;meta charset=utf-8&gt;</b></i>
+    </p>
+
+    <p>Es muy importante tener esta etiqueta meta en todas los documentos de HTML</p>
+
+    <p>
+      Ahora, los otros atributos que tiene meta son <i>name</i> y <i>content</i>. Estos sirven para agregar <br>
+      otros tipos de metadatos. por ejemplo:
+    </p>
+
+    <h3>name=keywords, palabras clave o etiquetas</h3>
+
+    <p>
+      Este tipo de metadato sirve para posicionar la página web en el buscador. Ahora mismo no son tan <br>
+      relevantes como alguna vez lo fueron, pero sin embargo sigue sirviendo y ayudando un poco al posicionamiento.
+    </p>
+
+    <p>
+      <i><b>&lt;meta name="keywords" content="programación,web,HTML,CSS,Javascript"&gt;</b></i>
+    </p>
+
+    <h3>name=description, descripción de la página</h3>
+
+    <p>
+      Con el metadato description se describe la página, su contenido, que es, para qué es.
+    </p>
+
+    <p>
+      <i><b>&lt;meta name="description" content="Esta es una página para documentar y apuntar mi proceso de aprendizaje
+        con HTML, para poder recordarlo y consultarlo cada vez que sea necesario, además de poder practicar
+        al ritmo."&gt;</b></i>
+    </p>
+
+    <h3>name=author, nombre del autor de la página</h3>
+
+    <p>
+      Simplemente guarda el dato del nombre del autor de la página.
+    </p>
+
+    <p>
+      <i><b>&lt;meta name="author" content="Fabián Sánchez"&gt;</b></i>
+    </p>
+
+    <h3>name=copyright, derechos de autor</h3>
+
+    <p>
+      Sirve para dar los derechos de autor a la página, en caso de que trabajemos para una empresa, por ejemplo:
+    </p>
+
+    <p>
+      <i><b>&lt;meta name="copyright" content="Facebook inc."&gt;</b></i>
+    </p>
+
+    <h3>name=robots, página indexable o no</h3>
+
+    <p>
+      Esta página sirve para indicar si la página es indexable o no, es decir, si puede salir en las busquedas de <br>
+      navegadores como google o no puede salir. Por ejemplo:
+    </p>
+
+    <p>Si se quiere que la página sea indexable</p>
+
+    <p>
+      <i><b>&lt;meta name="robots" content="index"&gt;</b></i>
+    </p>
+
+    <p>Si se quiere que la página NO sea indexable</p>
+
+    <p>
+      <i><b>&lt;meta name="robots" content="noindex"&gt;</b></i>
+    </p>
+
+    <footer>
+      <p><a href="index.html">Volver a la página principal</a></p>
+    </footer>
+
+  </body>
+</html>
