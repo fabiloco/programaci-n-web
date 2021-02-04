@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tablas en HTML</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article class="">
+      <section>
+          <h1>Tablas en HTML</h1>
+          <p>
+            Las tablas en HTML se administran con la etiqueta <b>&lt;table&gt;</b>. Sirven para guardar y organizar información. Podemos <br>
+            almacenar esta información dentro de los dos elementos de las tablas; las columnas y las filas. Estos elementos los <br>
+            encontramos representados por las siguientes etiquetas; <b>&lt;tr&gt;</b> que es para definir las filas y <b>&lt;td&gt;</b> que es para definir <br>
+            las columnas.
+          </p>
+
+          <p>
+            Las columnas se usan para almacenar información del mismo tipo, mientras que las filas se usan para cambiar el tipo de información.
+          </p>
+
+          <h3>Ejemplo de tabla</h3>
+
+          <table>
+            <tr>
+              <td><b>Nombre</b></td>
+              <td><b>Apellido</b></td>
+              <td><b>Correo</b></td>
+              <td><b>Cedula</b></td>
+            </tr>
+            <tr>
+              <td>Fabián</td>
+              <td>Sánchez</td>
+              <td>faalsaru@gmail.com</td>
+              <td>1003050299</td>
+            </tr>
+            <tr>
+              <td>Jose</td>
+              <td>Muñoz</td>
+              <td>josiusd@gmail.com</td>
+              <td>1003412344</td>
+            </tr>
+          </table>
+
+          <p>
+            Podemos agregarle la propiedad <i>"border"</i> a la tabla, dandole un valor en pixeles, por ejemplo: <br>
+            <code>border:1px</code> <br>
+            Para agregar un borde y cuadricula de diseño a la tabla.
+          </p>
+
+          <p>Ahora la misma tabla con border:1px</p>
+
+          <table border="1px">
+            <tr>
+              <td><b>Nombre</b></td>
+              <td><b>Apellido</b></td>
+              <td><b>Correo</b></td>
+              <td><b>Cedula</b></td>
+            </tr>
+            <tr>
+              <td>Fabián</td>
+              <td>Sánchez</td>
+              <td>faalsaru@gmail.com</td>
+              <td>1003050299</td>
+            </tr>
+            <tr>
+              <td>Jose</td>
+              <td>Muñoz</td>
+              <td>josiusd@gmail.com</td>
+              <td>1003412344</td>
+            </tr>
+          </table>
+
+          <h3>Otro ejemplo de tabla</h3>
+
+          <table border="1">
+            <tr>
+              <td>North</td>
+              <td>12%</td>
+              <td>$38,64m</td>
+            </tr>
+
+            <tr>
+              <td colspan="3">Top 3</td>
+            </tr>
+
+            <tr>
+              <td colspan="2">Chicago</td>
+              <td>$20,09m</td>
+            </tr>
+
+            <tr>
+              <td colspan="2">Cleveland</td>
+              <td>$12,24m</td>
+            </tr>
+
+            <tr>
+              <td colspan="2">Minnepolis</td>
+              <td>$3,53m</td>
+            </tr>
+
+            <tr>
+              <td>East</td>
+              <td>42%</td>
+              <td>$135,24m</td>
+            </tr>
+
+            <tr>
+              <td colspan="3">Top 3</td>
+            </tr>
+
+            <tr>
+              <td rowspan="3" colspan="2"> ??? </td>
+              <td>$34,52m</td>
+            </tr>
+
+            <tr>
+              <td>$23,09m</td>
+            </tr>
+
+            <tr>
+              <td>$12,64m</td>
+            </tr>
+
+            <tr>
+              <td>South</td>
+              <td>27%</td>
+              <td>$86,94m</td>
+            </tr>
+
+            <tr>
+              <td>West</td>
+              <td>19%</td>
+              <td>$61,18m</td>
+            </tr>
+
+          </table>
+
+
+      </section>
+    </article>
+
+    <aside class="">
+      <p>Click <a href="index.html">aquí</a> para volver.</p>
+    </aside>
+    <footer>
+      <p>Copyright - Todos los derechos reservados <br>
+      Fabián Sánchez</p
+    </footer>
+  </body>
+</html>
