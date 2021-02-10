@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Estructra CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="index.html">Inicio</a></li>
+          <li class="header-nav-ul-li"><a href="">Acerca de</a></li>
+        </ul>
+      </nav>
+      <h2 class="header-h2">Estructura (Sintaxis) CSS</h2>
+    </header>
+    <article>
+      <section class="section">
+        <p class="section-p">
+          La estructura, o sintaxis, de CSS esta compuesta básicamente de 3 elementos, los
+          cuales son: <b>selector</b>,  <b>propiedades</b> y <b>valor</b>. Es muy
+          simple, ahora procederemos a explicar cada elemento por separado y ver
+          su funcionalidad.
+        </p>
+
+        <p class="section-p">
+          Adjunto foto de <b>Estructura CSS</b>:
+        </p>
+
+        <div class="section-p">
+          <img src="sintaxis-visual.png" alt="Sintaxis CSS" title="Sintaxis">
+        </div>
+
+        <h2 class="section-h2">
+          <b>Selector</b>
+        </h2>
+
+        <p class="section-p">
+          El <b>selector</b> hace referencia al <b>elemento</b> o <b>conjunto de
+          elementos</b> a los cuales les vamos a modificar sus propiedades visuales.
+          Lo que coloquemos en selector tiene que hacer referencia directamente al
+          elemento o elementos que queramos modificar, como por ejemplo, si queremos
+          modificar la o las etiqueta de parrafo (p) o la de titulo (h1), es en
+          esta parte donde le indicaremos eso. Todo lo que este dentro del bloque
+          del selector, serán propiedades del elemento seleccionado. Una vez fuera
+          del bloque, ya no estaremos haciendo referencia al elemento del selector.
+        </p>
+
+        <p class="section-p">
+          Hay diferentes y muchas formas de hacer referencia a elementos de HTML
+          en CSS, todo esto depende del tipo de selector que usemos. Para saber
+          más de los tipos de selectores que existen y de teoria de selectores,
+          ve al apartado de <a href="selectores.html">Selectores en CSS</a>.
+        </p>
+
+        <h2 class="section-h2">
+          <b>Propiedad</b>
+        </h2>
+
+        <p class="section-p">
+          Es en esta parte donde le indicamos a CSS la propiedad especifica que
+          queramos cambiar del elemento anteriormente seleccionado en el selector.
+          Si queremos modificar el estilo de la fuente, el color, el color del fondo,
+          si le queremos dar un margin, un padding, si queremos añadirle un border,
+          todo esto es lo que ira en propiedad, lo que queramos cambiar.
+        </p>
+
+        <p class="section-p">
+          Obviamente, la propiedad que coloquemos tiene que ser una propiedad modificable
+          del elemento seleccionado en el selector, ya que no todos los elementos
+          tienen las mismas propiedades modificables, algunos tienen propiedades
+          especiales. <b>Debemos cerrar la sentencia propiedad con dos puntos (:) para
+          indicar así que lo que sigue es el nuevo valor que se le va a asignar a la
+          propiedad.</b>
+        </p>
+
+        <h2 class="section-h2">
+          <b>Valor</b>
+        </h2>
+
+        <p class="section-p">
+          Lo que va en valor debe hacer referencia a la nueva forma que queremos
+          darle a la propiedad del elemento seleccionado. Suelen ser valores númericos
+          y también muchos valores que representen formas, colores (colores en
+          hexadecimal) o también posiciones.
+        </p>
+
+        <p class="section-p">
+          Los valores dependen de la propiedad que vayamos a cambiar, es decir,
+          si vamos a cambiar el tamaño de la fuente, obviamente debemos poner un
+          valor númerico, ya se a en pixeles, em o cualquier otra de <a href="unidades.html">las unidades
+          que hay en CSS</a>. Si vamos a cambiar un color, el valor puede ser
+          el nombre del color directamente, o si queremos un color más especifico,
+          debemos ponerlo en codigo hexadecimal. Si queremos cambiar el alineamiento
+          del elemento, debemos decirle si lo queremos en la posición right, center o left.
+          Y también si queremos darle un border a nuestro elemento, debemos decire,
+          dentro de los diferentes tipos de border's que existen, cual es el que queremos.
+          Cuando ya terminemos de darle el valor, es importante cerrar la sentencia con un
+          punto y coma (;), para cerrar la sentencia y dar paso a una nueva.
+        </p>
+
+        <p class="section-p">
+          Existen muchisimas propiedades disponibles para cambiar, y muchisimos
+          valores por escoger, es imposible aprenderse todos, solo es cuestióna
+          de practica aprenderse una gamma de ellos para poder trabajar de una forma
+          optima.
+        </p>
+
+      </section>
+    </article>
+    <aside class="">
+
+    </aside>
+    <footer class=footer>
+      <div class="footer-bottoms">
+          <p> <a href="#">Volver</a> </p>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Fabián Sánchez - Todos los derechos reservados.</p>
+      </div>
+
+    </footer>
+  </body>
+</html>
