@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="normalize.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="gokusita">
       <nav class="header-nav">
         <ul class="header-nav-ul">
           <li class="header-nav-ul-li"><a href="index.html">Inicio</a></li>
@@ -32,7 +32,284 @@
           para usar, ya que mantenemos el HTML de un lado y el CSS del otro, sin
           juntar lengajes.
         </p>
+
+        <p class="section-p">
+          A continuación, repasaremos todos los tipos de selectores que hay,
+          como implementarlos y para que sirven:
+        </p>
+
+        <h2 class="section-h2">
+          Selector universal
+        </h2>
+
+        <p class="section-p">
+          El selector universal selecciona a todos los elementos que hay dentro
+          del body. Con este selector podemos, por ejemplo, modificar la fuente
+          de toda la página ene general, o todo lo que esta dentro del body.
+        </p>
+
+        <p class="section-p">
+          Para usarlo, indicamos como selector el signo asterisco (<b>*</b>), y
+          de esa forma ya le indicamos a CSS que le queremos modificar una
+          propiedad a todos los elementos de la página.
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>*</b>{<br>
+              propiedad:valor;<br>
+              propiedad:valor;<br>
+            }
+          </code>
+        </p>
+
+        <h2 class="section-h2">
+          Selector de tipo
+        </h2>
+
+        <p class="section-p">
+          Con este selector, seleccionamos a los elementos por tipo. Es decir,
+          simplemente con su nombre de etiqueta, y una vez seleccionado, todos
+          los elementos que sean de ese tipo, serán modificados.
+        </p>
+
+        <p class="section-p">
+          Para usar el selector por tipo, simplemente debemos indicar en la parte
+          del selector el nombre de la etiqueta a la cual queremos modificar, de
+          la siguiente forma:
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>h1</b>{<br>
+              propiedad:valor;<br>
+              propiedad:valor;<br>
+            }
+          </code>
+        </p>
+
+        <h2 class="section-h2">
+          Selector por clases
+        </h2>
+
+        <p class="section-p">
+          Con el selector por clases, podremos modificar todos los elementos que
+          pertenezcan a la misma clase. Para atribuirle una clase a un elemento de
+          HTML, simplemente debemos añadirle a la atiqueta el atributo <b><i>class</i></b>
+          y darle un nombre a la clase.
+        </p>
+
+        <p class="section-p">
+          Por ejemplo, vamos añadirle la clase <i>pepito</i> a un elemento <i>h2</i>:
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>&lt;h2 <i>class="pepito"</i> &gt; Titulo &lt;/h2&gt;</b>
+          </code>
+        </p>
+
+        <p class="section-p">
+          Ahora, para hacer hacer referencia a la clase <i>pepito</i> en CSS,
+          debemos usar el <i>selector de clase</i>, que es simplemente colocar
+          el nombre de la clase, pero empezando por un punto. <i> <b>.pepito</b> </i>
+        </p>
+
+        <p class="section-p">
+          Veamos el ejemplo si queremos modificar cualquier elemento de la clase
+          pepito:
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>.pepito</b>{<br>
+              propiedad:valor;<br>
+              propiedad:valor;<br>
+            }
+          </code>
+        </p>
+
+        <h2 class="section-h2">
+          Selector por id (identificador)
+        </h2>
+
+        <p class="section-p">
+          El selector por identificador es muy parecido al selector por clases,
+          ya que de igual manera, debemos añadir un atributo, esta vez de tipo <i> <b>id</b> </i>,
+          al elemento que queramos modificar, y todos los elementos que tengan
+          este identificador especial, serán modificados.
+        </p>
+
+        <p class="section-p">
+          Por ejemplo, vamos a añadirle el <i> <b>id=id-element</b> </i> a la etiqueta
+          h2:
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>&lt;h2 <i>id="id-element"</i> &gt; Titulo &lt;/h2&gt;</b>
+          </code>
+        </p>
+
+        <p class="section-p">
+          <b>*</b> Algo muy <b>importante</b> de los identificadores, es que estos <b>deben
+          ser unicos</b>. Un identificador debe ser unico de un elemento en concreto.
+          <b>Ningun otro elemento particular debe tener el mismo id que otro</b>.
+        </p>
+
+        <p class="section-p">
+          Ahora bien, para usar el selector por identificador en CSS, debemos usar
+          el <b> # hashtag</b> (o el gato XD) y luego colocar el valor del id que
+          pusimos en la etiqueta que queremos modificar.
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>#id-element</b>{<br>
+              propiedad:valor;<br>
+              propiedad:valor;<br>
+            }
+          </code>
+        </p>
+
+        <h2 class="section-h2">
+          Selector por atributo
+        </h2>
+        <!--
+        <p class="section-p">
+          El selector por atributo ya no requiere un archivo externo de CSS para
+          usarse, ya que simplemente se agrega la <b>propiedad</b> y el <b>valor</b> como atributo
+          de la etiqueta a la cual se quiera modificar, y esta presentara los cambios
+          correspondientes.
+        </p>
+
+        <p class="section-p">
+          Acá un ejemplo de uso del selector por atributo
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>&lt;h2 <i>propiedad="valor", propiedad="valor"</i> &gt; Titulo &lt;/h2&gt;</b> <br> <br>
+            <b>&lt;h2 <i>font-size=3em, color="red", font-family="Tahoma" </i> &gt; Titulo &lt;/h2&gt;</b>
+          </code>
+        </p>
+
+        -->
+
+        <p class="section-p">
+          El selector por atributo trata sobre colocarle un atributo y un valor
+          al elemento que queramos modificar, y luego en CSS modificar todos los
+          elementos que tengan el mismo atributo igualados al mismo valor. Para
+          añadir un atributo a una etiqueta HTML, debemos escribir una propiedad y
+          igualarla a un valor, y estos dos items pueden ser los que sean, como en
+          el siguiente ejemplo:
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>&lt;h2 <i>love="cats" </i> &gt; Titulo &lt;/h2&gt;</b> <br> <br>
+          </code>
+        </p>
+
+        <p class="section-p">
+          Luego, en nuestro archivo CSS, para usar el selctor por atributo,
+          debemos escribir lo mismo que escribimos en nuestro elemento HTML tal
+          cual como esta, encerrado entre corchetes. <b><i>[bebesita="anuel"]</i></b>.
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>[love="cats"]</b>{<br>
+              propiedad:valor;<br>
+              propiedad:valor;<br>
+            }
+          </code>
+        </p>
+
+        <h2 class="section-h2">Selector por decendientes</h2>
+
+        <p class="section-p">
+          La forma de seleccionar de forma decendente es simplemente seleccionar
+          los elementos que esten dentro de otros. Primero se pone el elemento en
+          el cual esta contenido el elemento que queremos modificar, y luego se
+          pone el elemento que queremos modificar que este adentro de ese primer
+          elemento contenedor. Por ejemplo, supongamos que tenemos las siguientes
+          etiquetas:
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>&lt;p&gt; &lt;b&gt;Gatitos&lt;b&gt; y &lt;i&gt;cafe&lt;i&gt; &lt;/p&gt;<br> <br></b>
+          </code>
+        </p>
+
+
+      <p class="section-p">
+        Ahora, si queremos modificar esos dos elementos que estan dentro de la
+        etiqueta parrafo con el selector decendente, podemos hacer lo siguiente:
+      </p>
+
+      <p class="section-p">
+        <code class="section-code">
+          <b>p b</b>{<br>
+            color:red;<br>
+          }<br>
+          <b>p i</b>{<br>
+            color:blue;<br>
+          }<br>
+        </code>
+      </p>
+
+      <p class="section-p">
+        De esta forma, se modificaran esos dos elementos que estan dentro de
+        la etiqueta parrafo, con los respectivos colores que le asignamos a
+        cada elemento. <b>Esto también debería funcionar perfectamente con
+        elementos que esten dentro de una clase, mezclando así los tipos de
+        selectores. </b>
+      </p>
+
+      <h2 class="section-h2"> Seleccion por pseudo-clases </h2>
+
+      <p class="section-p">
+        La forma de seleccionar por pseudo clases es para darle funcionalidad de
+        eventos a los elementos. Es decir, cuando se active un cierto evento en
+        el documento HTML, la pseudo clase se activará y entonces el elemento
+        cambiara sus propiedades a las que le hayamos puesto. Estas pseudo clases
+        ya estan definidas, algunas muy comunes son <b>hover</b>, que se activa
+        cuando pasamos el puntero sobre el elemento.
+      </p>
+
+      <p class="section-p">
+        Veamos en que consiste, podemos hacer que un elemento cambie de color
+        cuando pasemos el puntero sobre el con la pseudo clase hover, para hacerlo
+        simplemente debemos seleccionar el elemento con algún tipo de selector, y
+        luego de eso, poner dos puntos (:), seguido de la pseudo clase que queramos
+        utilizar.
+      </p>
+
+      <p class="section-p">
+        <code class="section-code">
+          <b>button:hover</b>{<br>
+            color:red;<br>
+          }
+        </code>
+      </p>
+
       </section>
     </article>
+    <aside class="">
+
+    </aside>
+    <footer class=footer>
+
+      <div class="footer-bottoms">
+          <p> <a href="#gokusita">Ir al inicio</a> </p>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Fabián Sánchez - Todos los derechos reservados.</p>
+      </div>
+
+    </footer>
   </body>
 </html>
