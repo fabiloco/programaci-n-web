@@ -9,24 +9,24 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <ul class="header-nav-ul">
-          <li class="header-nav-ul-li"><a href="index.html">Inicio</a></li>
-          <li class="header-nav-ul-li"><a href="">Acerca de</a></li>
+      <nav class="header__nav">
+        <ul class="header__nav-ul">
+          <li class="header__nav-ul-li"><a href="index.html">Inicio</a></li>
+          <li class="header__nav-ul-li"><a href="">Acerca de</a></li>
         </ul>
       </nav>
-      <h2 class="header-h2">Especificidad</h2>
+      <h2 class="header__h2">Especificidad</h2>
     </header>
     <article>
       <section class="section">
 
-        <p class="section-p">
+        <p class="section__p">
           La especificidad es una logica que viene a solucionar los problmeas y para lidiar
           con los conflictos que puede ocasionar trabajar con distintos tipos de selectores,
           debido a la tabla de herarquia, o importancia, de los selectores.
         </p>
 
-        <p class="section-p">
+        <p class="section__p">
           CSS son las siglas en ingles de <i><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</i>,
           en español <i>Hojas de estilo cascada</i>, y este nombre no lo tiene solo porque si,
           este nombre significa que CSS siempre va a leer los archivos de arriba hacia abajo,
@@ -36,20 +36,20 @@
           todo en CSS.
         </p>
 
-        <p class="section-p">
+        <p class="section__p">
           <img src="especificidad.png" alt="herarquia especificidad" title="Herarquia_especificidad" width="300px" >
         </p>
 
-        <p class="section-p">
+        <p class="section__p">
           La "cascada" solo funciona cuando todos los selectores son del mismo tipo de
           selector, de lo contrario, actuara la tabla de herarquia y dependiendo de la
           posición en la herarquia del tipo de selector que se este usando, entonces se
           aplicara un estilo u otro.
         </p>
 
-        <h2 class="section-h2">Estilos en linea</h2>
+        <h2 class="section__h2">Estilos en linea</h2>
 
-        <p class="section-p">
+        <p class="section__p">
           Este es uno de los tipos de selectores con más poder, ya que esta justo por
           debajo del más poderoso, que es el <b>!important</b>. Este tipo de selector
           no lo vimos en el capitulo anterior, pero vamos a explicarlo aquí. Es
@@ -59,19 +59,19 @@
           la selección esta hecha. Veamos un ejemplo:
         </p>
 
-        <p class="section-p">
-          <code class="section-code">
+        <p class="section__p">
+          <code class="section__code">
             <b>&lt;h2 style="color:red" &gt; Titulo &lt;/h2&gt;<br> <br></b>
           </code>
         </p>
 
-        <p class="section-p">
+        <p class="section__p">
           Obviamente, el titulo saldría de color rojo.
         </p>
 
-        <h2 class="section-h2">!important</h2>
+        <h2 class="section__h2">!important</h2>
 
-        <p class="section-p">
+        <p class="section__p">
           Dentro de la herarquia de la especificidad de CSS, <b>!important</b> es el
           más importante. Esta sentencia no entiende de cascadas ni nada, lo que se
           coloque con <b>!important</b> se hará siempre, y siempre será lo que tenga
@@ -80,9 +80,9 @@
           CSS, la cual puede ser con cualquier selector. Ejemplo:
         </p>
 
-        <p class="section-p2">
-          <p class="section-p">
-            <code class="section-code">
+        <p class="section__p2">
+          <p class="section__p">
+            <code class="section__code">
               <b>h2</b>{<br>
                 color:red; <b>!important</b><br>
               }
@@ -90,7 +90,7 @@
           </p>
         </p>
 
-        <p class="section-p">
+        <p class="section__p">
           de esta forma, la propiedad color:red del objeto h2 será siempre roja, no
           importa nada, ni la posición, ni la cascada, ni si ya se ha cambiado en otra
           parte.
@@ -104,11 +104,11 @@
 
     </aside>
     <footer class=footer>
-      <div class="footer-bottoms">
+      <div class="footer__bottoms">
           <p> <a href="#gokusita">Ir al inicio</a> </p>
       </div>
 
-      <div class="footer-copyright">
+      <div class="footer__copyright">
         <p>Fabián Sánchez - Todos los derechos reservados.</p>
       </div>
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Metodología de BEM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav-ul">
+          <li class="header__nav-ul-li"><a href="index.html">Inicio</a></li>
+          <li class="header__nav-ul-li"><a href="">Acerca de</a></li>
+        </ul>
+      </nav>
+      <h2 class="header__h2">Metodología de BEM</h2>
+    </header>
+    <article>
+      <section class="section">
+        <p class="section__p">
+          En CSS existen muchas metodologías para trabajar de forma organizada
+          y llevar un orden al momento de diseñar nuestras páginas webs. Una
+          de estas metodologías es la <b>Metodología de BEM</b>. Esta metodología
+          nos ayuda organizar nuestros bloques y a llevar un orden herarquico que
+          sea facil de llevar, buscar, entender y leer.
+        </p>
+
+        <p class="section__p">
+          Para trabajar con la metodología de BEM debemos colocar a nuestras etiquetas
+          clases. Los nombres de esas clases deben ser nombres claves, cortos que
+          describan facilmente que es lo que va a ser ese bloque. Luego de eso, todos
+          los elementos que esten dentro de ese bloque, también tendran una clase,
+          cuyo nombre empezara con el nombre de la clase del bloque, seguido de dos
+          underscore ( __ barras bajas), y luego el nombre del elemento. y Así
+          sucesivamente. Ejemplo:
+        </p>
+
+        <p class="section__p">
+          <code class="section__code">
+            <br><b>&lt;p class="parrafo" &gt; &lt;b class="parrafo__bold" &gt;Gatitos&lt;b&gt; y &lt;i class="parrafo__italic &gt;cafe&lt;i&gt; &lt;/p&gt;<br> <br></b>
+          </code>
+        </p>
+
+        <p class="section__p">
+          Luego, en CSS, para modificar estos elementos, se vería así:
+        </p>
+
+        <p class="section__p">
+          <code class="section__code">
+            <b>.parrafo</b>{<br>
+              font-family:Tahoma; <br>
+            }<br><br>
+
+            <b>.parrafo__bold</b>{<br>
+              color:red; <br>
+            }<br><br>
+
+            <b>.parrafo__italic</b>{<br>
+              color:blue; <br>
+            }<br><br>
+          </code>
+        </p>
+
+      </section>
+    </article>
+
+    <aside class="">
+
+    </aside>
+    <footer class=footer>
+      <div class="footer__bottoms">
+          <p> <a href="#gokusita">Ir al inicio</a> </p>
+      </div>
+
+      <div class="footer__copyright">
+        <p>Fabián Sánchez - Todos los derechos reservados.</p>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
