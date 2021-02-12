@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Especificidad</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="index.html">Inicio</a></li>
+          <li class="header-nav-ul-li"><a href="">Acerca de</a></li>
+        </ul>
+      </nav>
+      <h2 class="header-h2">Especificidad</h2>
+    </header>
+    <article>
+      <section class="section">
+
+        <p class="section-p">
+          La especificidad es una logica que viene a solucionar los problmeas y para lidiar
+          con los conflictos que puede ocasionar trabajar con distintos tipos de selectores,
+          debido a la tabla de herarquia, o importancia, de los selectores.
+        </p>
+
+        <p class="section-p">
+          CSS son las siglas en ingles de <i><b>C</b>ascading <b>S</b>tyle <b>S</b>heets</i>,
+          en español <i>Hojas de estilo cascada</i>, y este nombre no lo tiene solo porque si,
+          este nombre significa que CSS siempre va a leer los archivos de arriba hacia abajo,
+          como una casacada. Esto significa que lo que esta de ultimo en una sentencia de CSS
+          siempre va a tener mayor prioridad que lo que esta al final. Si al principio ponemos
+          un color, y al final otro, siempre el color seleccionado será el ultimo, y así es con
+          todo en CSS.
+        </p>
+
+        <p class="section-p">
+          <img src="especificidad.png" alt="herarquia especificidad" title="Herarquia_especificidad" width="300px" >
+        </p>
+
+        <p class="section-p">
+          La "cascada" solo funciona cuando todos los selectores son del mismo tipo de
+          selector, de lo contrario, actuara la tabla de herarquia y dependiendo de la
+          posición en la herarquia del tipo de selector que se este usando, entonces se
+          aplicara un estilo u otro.
+        </p>
+
+        <h2 class="section-h2">Estilos en linea</h2>
+
+        <p class="section-p">
+          Este es uno de los tipos de selectores con más poder, ya que esta justo por
+          debajo del más poderoso, que es el <b>!important</b>. Este tipo de selector
+          no lo vimos en el capitulo anterior, pero vamos a explicarlo aquí. Es
+          simplemente añadir los estilos en la propia etiqueta, desde el archivo HTML
+          y no desde un archivo externo, como usualmente hacemos. Por eso, no cuenta
+          del todo como un tipo de selector, porque no estamos seleccionando nada, ya
+          la selección esta hecha. Veamos un ejemplo:
+        </p>
+
+        <p class="section-p">
+          <code class="section-code">
+            <b>&lt;h2 style="color:red" &gt; Titulo &lt;/h2&gt;<br> <br></b>
+          </code>
+        </p>
+
+        <p class="section-p">
+          Obviamente, el titulo saldría de color rojo.
+        </p>
+
+        <h2 class="section-h2">!important</h2>
+
+        <p class="section-p">
+          Dentro de la herarquia de la especificidad de CSS, <b>!important</b> es el
+          más importante. Esta sentencia no entiende de cascadas ni nada, lo que se
+          coloque con <b>!important</b> se hará siempre, y siempre será lo que tenga
+          mayor prioridad. Para usar <b>!important</b>, simplemente debemos añadirlo
+          al lador de una propiedad que estemos modificando dentro de una sentencia de
+          CSS, la cual puede ser con cualquier selector. Ejemplo:
+        </p>
+
+        <p class="section-p2">
+          <p class="section-p">
+            <code class="section-code">
+              <b>h2</b>{<br>
+                color:red; <b>!important</b><br>
+              }
+            </code>
+          </p>
+        </p>
+
+        <p class="section-p">
+          de esta forma, la propiedad color:red del objeto h2 será siempre roja, no
+          importa nada, ni la posición, ni la cascada, ni si ya se ha cambiado en otra
+          parte.
+        </p>
+
+
+      </section>
+    </article>
+
+    <aside class="">
+
+    </aside>
+    <footer class=footer>
+      <div class="footer-bottoms">
+          <p> <a href="#gokusita">Ir al inicio</a> </p>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Fabián Sánchez - Todos los derechos reservados.</p>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
