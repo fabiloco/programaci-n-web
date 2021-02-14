@@ -1,0 +1,16 @@
+*{
+  font-family: Tahoma;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+body{
+}
+
+.caja-fixed{
+  background-color: red;
+  position: sticky;
+  margin-top: 100px;
+  top:0px;
+  opacity: 0.3;
+}

@@ -1,0 +1,21 @@
+*{
+  font-family: "Tahoma", cursive;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+div{
+  width:200px;
+  height:200px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+.caja1{
+  outline: 5px solid red;
+}
+
+.caja2{
+  position: relative;
+  outline: 5px solid red;
+}
