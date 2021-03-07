@@ -1,0 +1,44 @@
+.text{
+  padding: .5em;
+  background: lightblue;
+}
+
+.text:empty{
+  all: unset;
+}
+/*
+.text:first-child{
+  background: red;
+}
+
+.text:last-child{
+  background: blue;
+}
+
+.text:nth-child(odd){
+  background: lightcoral;
+}
+
+.text:nth-child(even){
+  background: aliceblue;
+}
+
+.text:nth-child(3){
+  background: aliceblue;
+}
+
+.text:nth-child(3n + 1  ){
+  background: aliceblue;
+}
+
+.text:only-child{
+background: lightblue;
+}
+
+.text:first-of-type{
+  background: blue;
+} */
+
+.text:not(){
+  background: green;
+}

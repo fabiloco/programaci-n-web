@@ -1,0 +1,44 @@
+body{
+  height: 100vh;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: radial-gradient(circle, #b94bf8, #3a1957);
+  background-repeat: no-repeat;
+  padding: .5rem;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 150px repeat(2, 1fr);
+  grid-template-areas:
+      "header header header"
+      "aside article article"
+      "footer footer .";
+}
+
+.header,
+.footer{
+  padding: 2rem 0%;
+  text-align: center;
+  background-color: peru;
+  grid-area: footer;
+}
+
+.header{
+  grid-area: header;
+}
+
+.article{
+  padding: 1rem;
+  background-color: lightseagreen;
+  grid-area: article;
+}
+
+.aside{
+  background-color: hotpink;
+  padding: 0% 2rem;
+  display: flex;
+  align-items: center;
+  grid-area: aside;
+
+}

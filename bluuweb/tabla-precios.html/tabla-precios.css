@@ -1,0 +1,70 @@
+*{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h2{
+  font-weight: 700;
+}
+
+p{
+  font-weight: 400px
+}
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.container__columna{
+  background: rgb(228, 228, 228);
+  color: #333;
+  border: 1px solid #333;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #888;
+  width: 22%;
+  box-sizing: border-box;
+}
+
+.container__precio{
+  font-size: 50px;
+  color: #00dac7;
+}
+
+.container__comprar{
+  background: salmon;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.container__comprar:hover{
+  background: tomato;
+}
+
+@media (max-width: 1070px) {
+  .container__columna{
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container__columna{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,57 @@
+body{
+  padding: 10px;
+}
+
+.flex-container{
+  background-color: tomato;
+  height: 400px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5em 0;
+
+}
+
+.flex-item{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  color: aliceblue;
+  background-color: violet;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+/*
+.prices{
+  display: flex;
+  align-items: flex-start;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.prices__items{
+  width: 25%;
+  height: 300px;
+}
+
+.prices__items:first-child{
+  background: peru;
+}
+
+.prices__items:nth-child(2){
+  background: green;
+  line-height: 20px;
+  align-self: center;
+}
+
+.prices__items:nth-child(3){
+  line-height: 15px;
+  background: indianred;
+}
+
+.prices__items:nth-child(4){
+  background: lightgreen;
+  line-height: 50px;
+} */

@@ -1,0 +1,51 @@
+.container{
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  position: relative;
+}
+
+[class^="box"]{
+  width: 50px;
+  height: 50px;
+}
+
+.box1{
+    border: 4px solid lightcoral;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box2{
+  border: 4px solid blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box3{
+  border: 4px solid green;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.box4{
+  border: 4px solid darkorange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.box5{
+  border: 4px solid yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

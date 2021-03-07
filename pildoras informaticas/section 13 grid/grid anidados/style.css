@@ -1,0 +1,41 @@
+body{
+  display: flex;
+
+  margin: 0;
+  height: 100vh;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: radial-gradient(circle, #b94bf8, #3a1957);
+  background-repeat: no-repeat;
+  padding: .5rem;
+
+  justify-content: center;
+  align-items: center;
+
+  
+
+}
+
+.grid-container{
+  display: grid;
+  background-color: aliceblue;
+  padding: 1rem;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item{
+  display: flex;
+  background-color: bisque;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+}
+
+.nested{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+}

@@ -1,0 +1,21 @@
+.container{
+  border: 1px solid blue;
+  padding: .5em;
+  margin: .5em;
+
+  height: 100px;
+
+  overflow: auto;
+}
+
+.article-float img{
+  max-width: 50%;
+  float:   right;
+
+}
+
+.article-float{
+  border: 1px solid blue;
+  margin:10px;
+  overflow: hidden;
+}

@@ -1,0 +1,24 @@
+body{
+  background: rgb(22, 22, 22);
+}
+
+.box{
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box__item{
+  width: 400px;
+  height: 400px;
+  background: hsl(120, 70%, 90%);
+  margin-left: auto;
+  margin-right: auto;
+  /* clip-path: circle(100px at left); */
+  /* clip-path: ellipse(100px 80px); */
+  /* clip-path: inset(20px 50px 100px 150px round 50px 30px 100px 2px); */
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  clip-path: polygon(10% 7%, 66% 63%, 83% 13%, 37% 67%, 49% 22%, 55% 69%, 86% 41%, 34% 12%, 18% 57%, 35% 80%, 53% 81%, 70% 74%, 80% 57%, 88% 40%, 87% 27%, 73% 10%, 42% 3%, 4% 19%, 3% 35%, 4% 50%, 10% 72%, 16% 75%, 34% 83%, 47% 86%, 69% 79%);
+}

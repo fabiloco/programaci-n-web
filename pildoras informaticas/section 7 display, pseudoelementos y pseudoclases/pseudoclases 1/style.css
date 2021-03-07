@@ -1,0 +1,68 @@
+.link:link{
+   color: red;
+}
+
+.link:visited{
+  color: yellow;
+}
+
+.link:active{
+  color: cyan;
+  background: green;
+}
+
+.button{
+  text-decoration: none;
+  display: inline-block;
+  background: tomato;
+  padding: .5em;
+  border-radius: 10px;
+  color: #FFF;
+}
+
+.button:active{
+  transform: scale(.9);
+}
+
+.button:hover{
+  background: #fff;
+  color: red;
+  border: 1px solid;
+}
+
+.input:focus{
+  background: green;
+}
+
+.text{
+  margin-top: 500px;
+  margin-bottom: 5000px;
+}
+
+.text:target{
+  padding-top: 75px;
+}
+
+.menu{
+  background: lightblue;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.span{
+  display: block;
+}
+
+.span:lang(en){
+  color: red;
+}
+
+.span:lang(es){
+  color: blue;
+}

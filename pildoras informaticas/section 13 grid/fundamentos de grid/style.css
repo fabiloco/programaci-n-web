@@ -1,0 +1,29 @@
+body{
+  font-family: Tahoma;
+  background-image: radial-gradient(circle, rgb(177, 103, 203), rgb(123, 7, 138));
+  background-repeat: no-repeat;
+  margin: 0;
+  color: aliceblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 150px 150px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.grid-item{
+  border: 1px solid;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
